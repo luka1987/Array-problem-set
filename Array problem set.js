@@ -9,12 +9,13 @@ function reverse(arr){
 // ISUNIFOM FUNCTION
 
 function isUniform(arr){
+	var index = arr[0];
 	for(var i = 1; i < arr.length; i++){
-		if(arr[i] === arr[0]){
-			console.log(true);
+		if(arr[i] === index){
+			return(true);
 		}
 		else{
-			console.log(false);
+			return(false);
 		}
 	}
 	
@@ -29,4 +30,16 @@ function sumArray(arr){
 		result += index;
 	}
 	return result;
+}
+
+// MAX FUNCTION
+
+function max(arr){
+	var index = 0;
+	for(var i =0; i < arr.length; i++){
+		if(arr[i] > index){
+			index = arr[i]
+		}
+	}
+	return index;
 }
