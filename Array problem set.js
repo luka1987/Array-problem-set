@@ -6,20 +6,18 @@ function reverse(arr){
 	}
 }
 
-// ISUNIFOM FUNCTION
+// ISUNIFORM FUNCTION
 
 function isUniform(arr){
 	var index = arr[0];
 	for(var i = 1; i < arr.length; i++){
-		if(arr[i] === index){
-			return(true);
-		}
-		else{
-			return(false);
-		}
-	}
-	
+		if(arr[i] !== index){
+			return false;
+		}	
 }
+return true;
+}
+
 
 // SUMARRAY FUNCTION
 
