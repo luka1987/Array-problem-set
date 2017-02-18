@@ -33,8 +33,8 @@ function sumArray(arr){
 // MAX FUNCTION
 
 function max(arr){
-	var index = 0;
-	for(var i =0; i < arr.length; i++){
+	var index = arr[0];
+	for(var i = 1; i < arr.length; i++){
 		if(arr[i] > index){
 			index = arr[i]
 		}
